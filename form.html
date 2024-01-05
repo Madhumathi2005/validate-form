@@ -1,0 +1,283 @@
+<!doctype html>
+<html lan="en">
+<head>
+<meta charset ="UTF-8">
+<title> Sri Eshwar Conference </title>
+<style>
+    body {
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gn38Lo6nLQFxSVaxpKUwwom4Okvr1gAY0pXkzO18Ca8euMsEMOrEHqX7rY0-PZSLz-o&usqp=CAU) no-repeat center center/cover;
+            margin: 20px;
+            color:white;
+        }
+    fieldset{
+        margin: 20px;
+    }
+    
+        #sub {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #re {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+
+</style>
+</head>
+<body>
+<center>
+<h1> Sri Eshwar Conference Registration Form </h1>
+</center>
+<form name="RegForm"  onsubmit="return (validateForm());"action = "success.html" method="get" enctype="multipart/form-data">
+    <!-- action="result.html" target="_self" target="_blank" --> 
+<center>
+<fieldset>
+<table width ="50%" id="one">
+<legend> PERSONAL DETAILS</legend>
+<tr>
+<td> <LABEL for ="Name"> NAME:</LABEL></td>
+<td> <input type ="text" name="Name" id="Name" placeholder ="ENTER YOUR NAME" ></td>
+</tr>
+<tr>
+<td> <LABEL FOR ="EMail">EMAIL:</LABEL></td>
+<td> <input TYPE="email"  name="EMail" id="EMail"placeholder="ENTER YOUR EMAIL" > </td>
+</tr>
+<tr>
+<td><LABEL FOR ="COUNTRY CODE">COUNTRY CODE:</LABEL></td>
+<td><input value ="+91" NAME="COUNTRY CODE" ID="COUNTRY CODE"placeholder="ENTER YOUR COUNTRY CODE" > </td>
+</tr>
+<tr>
+<td> <LABEL FOR ="PHONENUMBER">PHONE NUMBER:</LABEL></td>
+<td> <INPUT TYPE ="TELEPHONE" name="Telephone" id="PhoneNumber" PLACEHOLDER="ENTER YOUR PHONE NUMBER" > </td>
+</tr>
+<tr>
+<td> <LABEL FOR="COMPANY NAME">COMPANY NAME:</LABEL></td>
+<td> <INPUT TYPE ="TEXT" maxlength="20"PLACEHOLDER="ENTER YOUR COMPANY NAME" ></td>
+</tr>
+<tr>
+<TD><LABEL FOR ="JOB TITLE">JOB TITLE:</LABEL></TD>
+<TD> <INPUT TYPE="TEXT" PLACEHOLDER ="ENTER YOUR JOB TITLE" ></TD>
+</TR>
+<TR>
+<TD><LABLE for="GENDER:"> GENDER:</LABLE></TD>       
+<TD><LABLE for="GENDER:"> MALE</LABLE>
+<INPUT type ="radio" Name = "GENDER:" id="GENDER:">   
+<LABLE for="GENDER:"> FEMALE</LABLE>
+<INPUT type ="radio" Name = "GENDER:" id="GENDER:"></TD>    
+</tr>
+<TR>
+<TD><LABLE for="AGE:"> AGE:</LABLE></TD>
+<TD> <INPUT type ="NUMBER" Name = "AGE:" id="AGE:" >    
+</TD>
+</TR>
+<tr>
+<td>COUNTRY:</td>
+<td> <input type ="text" placeholder ="ENTER YOUR COUNTRY" > </td>
+</tr>
+<tr>
+<td>CITY:</td>
+<td> <input type ="text" placeholder ="ENTER YOUR CITY" > </td>
+</tr>
+</table>
+</fieldset>
+<fieldset>
+<table width="50%">
+<legend> PREFERNCE</legend>
+<TR>
+<TD><LABEL FOR ="DIETARY PREFERENCES:"> DIETARY PREFERENCES:</LABEL></TD>
+<TD><SELECT NAME="DIETARY PREFERENCES:">
+<option selected disabled>SELECT</option>
+<optgroup label="Veg">
+<option>White Rice</option>
+<option>Pongal</option>
+<option>Veg Biriyani</option>
+<option>Puri</option>
+<option>Idly</option>
+<option>Dosa</option>
+<option>Veg noodles</option>
+<option>Parota</option>
+<option>Sambhar Sadham</option></option>
+<optgroup label="Non-Veg">
+<option>Chicken Biriyani</option>
+<option>Egg noodles</option>
+<option>Chicken noodles</option>
+<option>Chicken 65</option>
+<option>Chicken grevy</option>
+<option>Mutton Biriyani</option>
+<option>Fish curry</option>
+<option></option>
+</optgroup>
+</select></td></TR>
+<tr>
+    <TD><LABEL FOR ="T SHIRT SIZE:">T SHIRT SIZE :</LABEL></TD>
+    <TD><SELECT NAME="T SHIRT SIZE:">
+    <option selected disabled>SELECT</option>
+    <optgroup label="SIZE">
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+    <option>XXL</option>
+    </option>
+    </optgroup>
+    </select></td>
+</tr>
+<TR>
+<TD><LABEL FOR="PREFERRED T-SHIRT COLOR:"> PREFERRED T-SHIRT COLOR:</LABEL> </TD>
+<TD> <INPUT TYPE="COLOR" NAME="PREFERRED T-SHIRT COLOR" ID="PREFERRED T-SHIRT COLOR"> </TD>
+</TR>
+<TR>
+<TD><LABLE for="SESSION PREFERRENCE:"> SESSION PREFERRENCE:</LABLE></TD>       
+<TD><LABLE for="SESSION PREFERRENCE:"> SESSION 1</LABLE>
+<INPUT type ="checkbox" Name = "SESSION PREFERRENCE:" id="SESSION PREFERRENCE:">   
+<LABLE for="SESSION PREFERRENCE:"> SESSION 2</LABLE>
+<INPUT type ="checkbox" Name = "SESSION PREFERRENCE:" id="SESSION PREFERRENCE:">
+<LABLE for="SESSION PREFERRENCE:"> SESSION 3</LABLE>
+<INPUT type ="checkbox" Name = "SESSION PREFERRENCE:" id="SESSION PREFERRENCE:">
+</TD>  
+</TR>
+<tr>
+    <TD><LABEL FOR ="WORKSHOP:">WORKSHOP:</LABEL></TD>
+    <TD><SELECT NAME="WORKSHOP:">
+    <option selected disabled>SELECT</option>
+    <optgroup label="WORKSHOP">
+    <option>QUANTUM COMPUTING</option>
+    <option>CYBER SECURITY</option>
+    <option>ARTIFICIAL INTELLIGENCE</option>
+    <option>DATA SCIENCE</option>
+    <option>CLOUD COMPUTING</option>
+    <option>GAMES AND ANIMATION</option>
+    <option>WEB DEVELOPMENT</option>
+    <option>APP DEVELOPMENT</option>
+    </optgroup>
+    </select></td>
+</tr>
+<tr>
+    <TD><LABEL FOR ="DATE OF ATTENDING WORKSHOP:">DATE OF ATTENDING WORKSHOP :</LABEL></TD>
+    <TD><SELECT NAME="DATE OF ATTENDING WORKSHOP:">
+    <option selected disabled>SELECT</option>
+    <optgroup label="DATE">
+    <option>01.10.24</option>
+    <option>01.11.24</option>
+    <option>01.12.24</option>
+   </optgroup>
+    </select></td>
+</tr>
+</table>
+</fieldset>
+<FIELDSET>
+    <legend>GEUST DETAILS</legend>
+    <TABLE WIDTH="50%">
+        <TR>
+            <TD><LABLE for="WILL YOU BRING A GUEST?">WILL YOU BRING A GUEST? </LABLE></TD>       
+            <TD><LABLE for="WILL YOU BRING A GUEST?:"> YES</LABLE>
+            <INPUT type ="radio" Name = "WILL YOU BRING A GUEST?" id="WILL YOU BRING A GUEST?">   
+            <LABLE for="WILL YOU BRING A GUEST?"> NO</LABLE>
+            <INPUT type ="radio" Name = "WILL YOU BRING A GUEST?" id="WILL YOU BRING A GUEST?"></TD>    
+            </tr>
+<TR>
+    <TD>GUEST NAME</TD>
+    <TD> <INPUT TYPE="TEXT" NAME="GUEST NAME" ID="GUEST NAME" ></TD>
+</TR>
+<TR>
+    <TD><LABEL FOR =" GUEST DIETARY PREFERENCES:"> GUEST DIETARY PREFERENCES:</LABEL></TD>
+    <TD><SELECT NAME="GUEST DIETARY PREFERENCES:">
+    <option selected disabled>SELECT</option>
+    <optgroup label="Veg">
+    <option>White Rice</option>
+    <option>Pongal</option>
+    <option>Veg Biriyani</option>
+    <option>Puri</option>
+    <option>Idly</option>
+    <option>Dosa</option>
+    <option>Veg noodles</option>
+    <option>Parota</option>
+    <option>Sambhar Sadham</option></option>
+    <optgroup label="Non-Veg">
+    <option>Chicken Biriyani</option>
+    <option>Egg noodles</option>
+    <option>Chicken noodles</option>
+    <option>Chicken 65</option>
+    <option>Chicken grevy</option>
+    <option>Mutton Biriyani</option>
+    <option>Fish curry</option>
+    <option></option>
+    </optgroup>
+    </select></td></TR>
+    <tr>
+    </TABLE>
+</FIELDSET>
+<FIELDSET>
+    <LEGEND> PAYMENT DETAILS</LEGEND>
+    <TABLE WIDTH ="50%">
+    <TR>
+        <TD><LABLE for="PAYMENT:" REQUIRED> PREFERRED PAYMENT METHOD:</LABLE></TD>       
+        <TD><LABLE for="PAYMENT:"> CREDIT CARD</LABLE>
+        <INPUT type ="radio" Name = "PAYMENT:" id="PAYMENT:">   
+        <LABLE for="PAYMENT:"> DEBIT CARD</LABLE>
+        <INPUT type ="radio" Name = "PAYMENT:" id="PAYMENT:"></TD>    
+        </tr>
+        <TR>
+            <TD> CARD NUMBER:</TD>
+            <TD> <INPUT TYPE="password"  ></TD>
+        </TR>
+        <TR>
+            <TD> CARD EXPIRATION DATE:</TD>
+            <TD> <INPUT TYPE="date"></TD>
+        </TR>
+        <TR>
+            <TD> CARD CVV:</TD>
+            <TD> <INPUT TYPE="password" ></TD>
+            </TR> 
+</TABLE>
+</FIELDSET>
+<FIELDSET>
+    <LEGEND> ADDITIONAL INFORMATION</LEGEND>
+    <TABLE WIDTH ="50%">
+        <TR>
+            <TD> BILLING ADDRESS:</TD>
+            <TD> <TEXTAREA NAME="BILLING ADDRESS:" PLACEHOLDER="ENTER YOUR ADDRESS"></TEXTAREA></TD>
+        </TR>
+        <TR>
+<TD><LABLE for="ABOUT:" REQUIRED>HOW DID YOU HEAR ABOUT US?</LABLE></TD>       
+<TD><LABLE for="ABOUT:"> NEWSPAPER</LABLE>
+<INPUT type ="checkbox" Name = "ABOUT:" id="ABOUT:"><BR>   
+<LABLE for="ABOUT:"> RELATIVES AND FRIENDS</LABLE>
+<INPUT type ="checkbox" Name = "ABOUT:" id="ABOUT:"><BR>
+<LABLE for="ABOUT:"> OUR WEBSITE </LABLE>
+<INPUT type ="checkbox" Name = "ABOUT:" id="ABOUT:"><BR>
+<LABLE for="ABOUT:">SOCIAL MEDIA</LABLE>
+<INPUT type ="checkbox" Name = "ABOUT:" id="ABOUT:"><BR>
+<LABLE for="ABOUT:"> OTHERS</LABLE>
+<INPUT type ="checkbox" Name = "ABOUT:" id="ABOUT:">
+            </TD>    
+            </tr>
+<TR>
+<TD> UPLOAD PHOTO FOR ID CARD </TD>
+<TD> <INPUT TYPE="file" > </TD>
+</TR>
+<TR>
+    <TD> COLLECT PROFILE </TD>
+    <TD> <INPUT TYPE="file"> </TD>
+    </TR><TR><TD>ADDITIONAL COMMENTS</TD>
+        <TD>  <TEXTAREA NAME="ADDITIONAL COMMENTS:" PLACEHOLDER="COMMENTS" ></TEXTAREA></TD>
+    </TR>             
+    </TABLE>
+</FIELDSET>
+<BUTTON TYPE="submit" id="sub">SUBMIT</BUTTON>
+<BUTTON TYPE="reset" id="re">RESET</BUTTON>
+</CENTER>
+</FORM>
+<script type="text/javascript" src="MyScript.js"></script>
+</body>
+</html>
+
